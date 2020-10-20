@@ -7,25 +7,25 @@ import by.gsu.epamlab.ifaces.TaskDAO;
 import by.gsu.epamlab.model.impl.TaskImpl;
 
 public class TaskFactory {
-	private enum DataSourse {
+	private enum DataSource {
         DB {
-        	TaskDAO getSourse(ResourceBundle rb) throws InitException{
+        	TaskDAO getSource(ResourceBundle rb) throws InitException{
                 return new TaskImpl();
             }
         };
 	 
-        abstract TaskDAO getSourse(ResourceBundle rb) throws InitException;
+        abstract TaskDAO getSource(ResourceBundle rb) throws InitException;
     }
  
-    private static TaskDAO sourse;
+    private static TaskDAO source;
 
 	public static void init(ResourceBundle rb) throws InitException{
 		final String FACTORY = "factory.task";
-        DataSourse enumSourse = DataSourse.valueOf(rb.getString(FACTORY).toUpperCase());
-        sourse = enumSourse.getSourse(rb);
+        DataSource enumSource = DataSource.valueOf(rb.getString(FACTORY).toUpperCase());
+        source = enumSource.getSource(rb);
 	}
 	
 	public static TaskDAO getClassFromFactory() {
-		return sourse;
+		return source;
 	}
 }

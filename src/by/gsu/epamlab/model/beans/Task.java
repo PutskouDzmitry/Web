@@ -39,8 +39,8 @@ public class Task {
 	
 	@Override
 	public String toString() {
-		final String SEMICOLON = ";";
-		return idTask + SEMICOLON + description + SEMICOLON + date;
+		final String DELIMITER = ";";
+		return idTask + DELIMITER + description + DELIMITER + date;
 	}
 
 }

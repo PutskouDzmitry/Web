@@ -18,15 +18,15 @@ public class UserFactory {
         abstract UserDAO getSourse(ResourceBundle rb)throws InitException;
     }
  
-    private static UserDAO sourse;
+    private static UserDAO source;
 
 	public static void init(ResourceBundle rb) throws InitException {
 		final String FACTORY = "factory.user";
         DataSourse enumSourse = DataSourse.valueOf(rb.getString(FACTORY).toUpperCase());
-        sourse = enumSourse.getSourse(rb);
+        source = enumSourse.getSourse(rb);
 	}
 	
 	public static UserDAO getClassFromFactory() {
-		return sourse;
+		return source;
 	}
 }

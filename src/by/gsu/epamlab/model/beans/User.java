@@ -27,8 +27,8 @@ public class User {
 	
 	@Override
 	public String toString() {
-		final String SEMICOLON = ";";
-		return login + SEMICOLON + password;
+		final String DELIMITER = ";";
+		return login + DELIMITER + password;
 	}
 
 }
