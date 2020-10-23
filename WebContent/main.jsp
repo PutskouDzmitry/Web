@@ -43,6 +43,7 @@
 						value="Recycle Bin" />
 				</a>
 			</div>
+			<div style="width: 100%; text-align: center;">${date}</div>
 			<c:choose>
 				<c:when test="${view eq 'Today'}">${view}: <fmt:formatDate
 						value="${today}" pattern="dd.MM" />
@@ -53,7 +54,7 @@
 				<c:otherwise>${view}</c:otherwise>
 			</c:choose>
 			<c:set var = "checkDay" value = "${view}" scope="session"/>
-			<form name="reg" action="<c:url value='/action?view=${view}'/>" method="post">
+			<form name="reg" action="<c:url value='/action'/>" method="post">
 				<table border="3">
 
 					<tr>

@@ -29,7 +29,7 @@
 				culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 			<hr>
-			<p> Developed by Damaskanau Daniil ddamaskanau@gmail.com </p>
+			<p> Developed by Putskou Dzmitry dimaputkovvv@gmail.com </p>
 		</div>
 		<div class="footer-sign">
 			<span class="montserrat-font">designed by</span> <span class="indie-flower">fin.</span>

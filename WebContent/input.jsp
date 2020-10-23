@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Add </title>
+<title>Insert title here</title>
 </head>
 <body>
-	<form name="reg" action="<c:url value='/action?view=${checkDay}'/>" method="post">
+	<form name="reg" action="<c:url value='/action'/>" method="post">
 		<c:if test="${checkDay == 'Today'}">
 			<p>
 				Description: <input type=text name="description" />

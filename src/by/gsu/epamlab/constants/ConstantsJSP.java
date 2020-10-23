@@ -22,5 +22,4 @@ public class ConstantsJSP {
 	public final static String TYPE_DAY_KEY = "date";
 	public final static String TYPE_DESC_KEY = "description";
 	public final static String TYPE_TASK_KEY = "idEvent";
-	public final static String MAIN_PAGE_VIEW = "/task?view=";
 }
