@@ -1,0 +1,195 @@
+* {
+  font-family: Lucida Sans Unicode;
+  font-size: 18px;
+  background-color: #333333;
+  color: white;
+}
+
+hr {
+  background-color: white;
+  height: 0.5px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.main-block-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-block {
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 580px;
+  margin: 10px;
+  padding: 15px 15px 0px 15px;
+  cursor: default;
+  box-shadow: 0px 0px 15px 1px rgba(255, 255, 255, 0.75);
+}
+
+.default-button {
+  border: 2px solid #00e673;
+  border-radius: 5px;
+  color: #00e673;
+  text-decoration: none;
+  padding: 2px 3px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.default-button:hover {
+  color: #333333;
+  border: 2px solid #00e673;
+  border-radius: 5px;
+  background-color: #00e673;
+  box-shadow: 0px 0px 15px 5px rgba(0, 230, 115, 0.5);
+}
+
+.default-button:active {
+  border: 2px solid #00e673;
+  background-color: #333333;
+  color: #00e673;
+  box-shadow: 0px 0px 15px 5px rgba(0, 230, 115, 0.5);
+}
+
+.footer-sign {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: gray;
+	opacity: 50%;
+}
+
+.montserrat-font {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.indie-flower {
+	font-size: 20px;
+	font-family: 'Indie Flower', cursive;
+}
+
+/*====================== login page ======================*/
+
+.login-block {
+  width: 400px;
+}
+
+.input {
+  width: 9 %;
+  border-radius: 15px;
+  padding: 0px 10px;
+  background-color: #4d4d4d;
+}
+
+.input:focus {
+  outline: none;
+  color: black;
+  background-color: #d9d9d9;
+  border: 2px solid #00e673;
+  box-shadow: 0px 0px 15px 5px rgba(0, 230, 115, 0.5);
+}
+
+.confirm-button {
+  float: right;
+  outline: none;
+  margin: 15px 0;
+}
+
+/*====================== task list page ======================*/
+
+.logout-button {
+	float: right;
+	margin-top: -30px;
+}
+
+.task-list-buttons-wrapper {
+  width: 590px;
+  margin: 20px auto;
+}
+
+.task-list-button {
+  border: 2px solid #4d79ff;
+  border-radius: 0px;
+  color: #4d79ff;
+  margin: -1px;
+  padding: 2px 6px;
+  margin-bottom: 20px;
+}
+
+.task-list-button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.task-list-button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.task-list-button:hover {
+  background-color: #4d79ff;
+  border: 2px solid #4d79ff;
+  padding: 2px 1px;
+  margin: 5px;
+  padding: 2px 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px rgba(77, 121, 255, 0.5);
+}
+
+table {
+  margin: 30px auto;
+}
+
+th, td {
+  padding: 2px 6px;
+}
+
+tr input {
+  margin: 2px;
+}
+
+.add-button {
+  margin: 10px 10px 10px 160px;
+  border: 2px solid #00e673;
+  color: #00e673;
+}
+
+.add-button:hover {
+  background-color: #00e673;
+  border: 2px solid #00e673;
+  box-shadow: 0px 0px 15px 5px rgba(0, 230, 115, 0.5);
+}
+
+.fix-button {
+  margin: 10px;
+  border: 2px solid #4d79ff;
+  color: #4d79ff;
+}
+
+.fix-button:hover {
+  background-color: #4d79ff;
+  border: 2px solid #4d79ff;
+  box-shadow: 0px 0px 15px 5px rgba(77, 121, 255, 0.5);
+}
+
+.remove-button {
+  margin: 10px 160px 10px 10px;
+  border: 2px solid #ff3333;
+  color: #ff3333;
+}
+
+.remove-button:hover {
+  background-color: #ff3333;
+  border: 2px solid #ff3333;
+  box-shadow: 0px 0px 15px 5px rgba(255, 51, 51, 0.5);
+}
+
+.back-button {
+  margin-bottom: 10px;
+  float: right;
+}
